@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void hesapla(String equation,double lowerbound , double upperBound ,double epsilonValue){
-
+        stepCount = 0;
+        steps1="";
         double fxA=evaluateExpression(equation,lowerbound);
         double fxU=evaluateExpression(equation,upperBound);
         double fxY;
